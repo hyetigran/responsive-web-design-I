@@ -141,7 +141,7 @@ body {
   font-family: "Titillium Web", sans-serif;
   margin: 0px 40px 0px 40px;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   html,
   body {
     margin: 0;
@@ -169,7 +169,7 @@ h5 {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .header {
     flex-direction: column-reverse;
     align-items: center;
@@ -178,7 +178,7 @@ h5 {
     justify-content: space-between;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .header {
     flex-direction: column-reverse;
   }
@@ -198,7 +198,7 @@ nav a {
 nav .first-anchor {
   margin-left: 0;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -221,7 +221,7 @@ nav .first-anchor {
   justify-content: space-between;
   margin: 20px 0;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .top-content div:nth-of-type(2) {
     display: none;
   }
@@ -229,7 +229,7 @@ nav .first-anchor {
     justify-content: center;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .top-content {
     width: 100%;
     margin: 0;
@@ -237,7 +237,7 @@ nav .first-anchor {
   }
 }
 /* all content (except header) left/right margin */
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .top-content,
   .middle-content,
   .bottom-content,
@@ -254,12 +254,13 @@ nav .first-anchor {
   flex-flow: row;
 }
 
-@media (max-width: 550px) {
-    .middle-content, .bottom-content {
-        flex-direction: column;
-    }
-    }
+@media (max-width: 500px) {
+  .middle-content,
+  .bottom-content {
+    flex-direction: column;
+  }
 }
+
 .item1 {
   margin-right: 12px;
 }
@@ -283,7 +284,7 @@ div .logo {
   display: flex;
   padding: 10px;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   div .logo {
     border-bottom: 1px solid grey;
     width: 100%;
@@ -295,7 +296,7 @@ h1 {
   text-align: center;
   padding-top: 50px;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   h1 {
     padding-top: 0;
   }
