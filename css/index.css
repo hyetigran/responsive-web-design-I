@@ -157,12 +157,28 @@ h5 {
   box-sizing: border-box;
 }
 .container {
+  max-width: 800px;
 }
-.column1 {
+.header {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  nav a {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    flex-direction: column;
+  }
+}
 nav {
+  display: flex;
   margin: 20px 0;
   font-size: 18px;
 }
@@ -170,16 +186,23 @@ nav a {
   color: grey;
   text-decoration-line: none;
   margin-left: 20px;
+  justify-content: space-between;
 }
 nav .first-anchor {
   margin-left: 0;
 }
-.column2 {
+.top-content {
   display: flex;
   justify-content: space-between;
-  flex-flow: row;
   margin: 20px 0;
 }
+@media (max-width: 750px) {
+    .top-content div:nth-of-type(2) {
+      display: none;
+      align-items: center;
+      margin: 0;
+    }
+
 .column3 {
   display: flex;
   justify-content: space-between;
