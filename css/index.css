@@ -197,13 +197,15 @@ nav .first-anchor {
   margin: 20px 0;
 }
 @media (max-width: 750px) {
-    .top-content div:nth-of-type(2) {
-      display: none;
-      align-items: center;
-      margin: 0;
-    }
+  .top-content div:nth-of-type(2) {
+    display: none;
+  }
+  .top-content {
+    justify-content: center;
+  }
+}
 
-.column3 {
+.middle-content {
   display: flex;
   justify-content: space-between;
   flex-flow: row;
@@ -211,7 +213,9 @@ nav .first-anchor {
 .item1 {
   margin-right: 12px;
 }
-.column4 {
+.middle-image {
+  max-width: 100%;
+  height: auto;
   margin: 20px 0;
 }
 .column5 {
@@ -296,11 +300,4 @@ ul {
 }
 .vision {
   margin: 20px;
-}
-
-@media (max-width: 600px) {
-  div {
-    display: flex;
-    flex-flow: wrap;
-  }
 }
