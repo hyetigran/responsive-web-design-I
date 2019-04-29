@@ -141,7 +141,12 @@ body {
   font-family: "Titillium Web", sans-serif;
   margin: 0px 40px 0px 40px;
 }
-
+@media (max-width: 550px) {
+  html,
+  body {
+    margin: 0;
+  }
+}
 h1,
 h2,
 h3,
@@ -159,6 +164,7 @@ h5 {
 .container {
   max-width: 800px;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -174,7 +180,7 @@ h5 {
 }
 @media (max-width: 550px) {
   .header {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 nav {
@@ -183,6 +189,7 @@ nav {
   font-size: 18px;
 }
 nav a {
+  display: flex;
   color: grey;
   text-decoration-line: none;
   margin-left: 20px;
@@ -190,6 +197,24 @@ nav a {
 }
 nav .first-anchor {
   margin-left: 0;
+}
+@media (max-width: 550px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav a {
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    margin-left: 0;
+    margin: 20px, 0;
+  }
+  a {
+    margin: 10px 0;
+    padding-bottom: 10px;
+  }
 }
 .top-content {
   display: flex;
@@ -204,11 +229,36 @@ nav .first-anchor {
     justify-content: center;
   }
 }
+@media (max-width: 550px) {
+  .top-content {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+/* all content (except header) left/right margin */
+@media (max-width: 550px) {
+  .top-content,
+  .middle-content,
+  .bottom-content,
+  img.middle-image,
+  .contact,
+  hr {
+    margin: 10px 10px;
+  }
+}
 
 .middle-content {
   display: flex;
   justify-content: space-between;
   flex-flow: row;
+}
+
+@media (max-width: 550px) {
+    .middle-content, .bottom-content {
+        flex-direction: column;
+    }
+    }
 }
 .item1 {
   margin-right: 12px;
@@ -218,7 +268,7 @@ nav .first-anchor {
   height: auto;
   margin: 20px 0;
 }
-.column5 {
+.bottom-content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -230,12 +280,25 @@ nav .first-anchor {
   align-content: space-between;
 }
 div .logo {
+  display: flex;
   padding: 10px;
+}
+@media (max-width: 550px) {
+  div .logo {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    justify-content: center;
+  }
 }
 h1 {
   font-size: 75px;
   text-align: center;
   padding-top: 50px;
+}
+@media (max-width: 550px) {
+  h1 {
+    padding-top: 0;
+  }
 }
 h2 {
   font-family: "Titillium Web", sans-serif;
