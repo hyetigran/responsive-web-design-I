@@ -194,6 +194,7 @@ nav a {
   text-decoration-line: none;
   margin-left: 20px;
   justify-content: space-between;
+ 
 }
 nav .first-anchor {
   margin-left: 0;
@@ -203,15 +204,12 @@ nav .first-anchor {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 0;
   }
   nav a {
     justify-content: center;
     width: 100%;
     border-bottom: 1px solid grey;
-    margin-left: 0;
-    margin: 20px, 0;
-  }
-  a {
     margin: 10px 0;
     padding-bottom: 10px;
   }
@@ -227,6 +225,7 @@ nav .first-anchor {
   }
   .top-content {
     justify-content: center;
+    
   }
 }
 @media (max-width: 500px) {
@@ -234,6 +233,10 @@ nav .first-anchor {
     width: 100%;
     margin: 0;
     margin-bottom: 20px;
+  }
+  .top-content div {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* all content (except header) left/right margin */
